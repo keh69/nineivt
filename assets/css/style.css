@@ -31,6 +31,7 @@ html {
 
 body {
   margin: 0;
+  font-size: 15px;
   font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   color: var(--text);
   background: var(--bg);
@@ -123,14 +124,14 @@ button {
 }
 
 .brand__name small {
-  font-size: 11px;
+  font-size: 10px;
   color: var(--text-soft);
   font-weight: 600;
   letter-spacing: 0.18em;
 }
 
 .brand__name strong {
-  font-size: 24px;
+  font-size: 22px;
 }
 
 .nav-toggle {
@@ -197,7 +198,7 @@ button {
 
 .site-nav a {
   position: relative;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 700;
   letter-spacing: -0.03em;
 }
@@ -243,7 +244,7 @@ button {
   padding: 0 24px;
   border-radius: 8px;
   border: 1px solid transparent;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 500;
   line-height: 1;
   white-space: nowrap;
@@ -380,7 +381,7 @@ button {
 .hero__eyebrow {
   display: inline-block;
   margin-bottom: 18px;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 700;
   letter-spacing: 0.18em;
   color: rgba(255, 255, 255, 0.8);
@@ -389,7 +390,7 @@ button {
 .hero h1 {
   margin: 0;
   max-width: 760px;
-  font-size: clamp(38px, 5.3vw, 76px);
+  font-size: clamp(34px, 4.8vw, 68px);
   line-height: 1.12;
   letter-spacing: -0.05em;
   font-weight: 900;
@@ -403,7 +404,7 @@ button {
   margin: 24px 0 0;
   max-width: 700px;
   color: rgba(255, 255, 255, 0.82);
-  font-size: clamp(16px, 2vw, 22px);
+  font-size: clamp(14px, 1.8vw, 20px);
 }
 
 .hero__actions {
@@ -424,14 +425,14 @@ button {
 
 .hero__panel h2 {
   margin: 0 0 10px;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 800;
 }
 
 .hero__panel p {
   margin: 0;
   color: rgba(255, 255, 255, 0.75);
-  font-size: 15px;
+  font-size: 14px;
 }
 
 /* 첫 화면 오른쪽 안내 카드(밝은 카드) */
@@ -445,7 +446,7 @@ button {
 
 .hero__panel--light h2 {
   margin: 8px 0 14px;
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 900;
   letter-spacing: -0.02em;
   color: var(--text);
@@ -453,12 +454,12 @@ button {
 
 .hero__panel--light p {
   color: var(--text-soft);
-  font-size: 15px;
+  font-size: 14px;
   line-height: 1.7;
 }
 
 .hero__panel-eyebrow {
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 800;
   letter-spacing: 0.14em;
   color: var(--text-soft);
@@ -493,7 +494,7 @@ button {
 }
 
 .hero__panel-company p {
-  font-size: 15px;
+  font-size: 14px;
   line-height: 1.6;
 }
 
@@ -510,14 +511,14 @@ button {
 
 .hero__stat strong {
   display: block;
-  font-size: 34px;
+  font-size: 30px;
   line-height: 1;
   margin-bottom: 6px;
 }
 
 .hero__stat span {
   color: rgba(255, 255, 255, 0.76);
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .hero__dots {
@@ -578,13 +579,13 @@ button {
 
 .notice-float__head strong {
   letter-spacing: 0.18em;
-  font-size: 12px;
+  font-size: 11px;
 }
 
 .notice-float__body {
   padding: 16px 18px 18px;
   color: rgba(255, 255, 255, 0.86);
-  font-size: 14px;
+  font-size: 13px;
   line-height: 1.65;
 }
 
@@ -623,14 +624,14 @@ button {
   display: inline-block;
   margin-bottom: 12px;
   color: var(--primary-strong);
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 800;
   letter-spacing: 0.16em;
 }
 
 .section-title h2 {
   margin: 0;
-  font-size: clamp(30px, 4vw, 48px);
+  font-size: clamp(27px, 3.6vw, 43px);
   line-height: 1.2;
   letter-spacing: -0.05em;
 }
@@ -639,7 +640,7 @@ button {
   margin: 18px auto 0;
   max-width: 780px;
   color: var(--text-soft);
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .section--dark .section-title p {
@@ -693,14 +694,14 @@ button {
 
 .card__index {
   color: var(--primary-strong);
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 800;
   letter-spacing: 0.16em;
 }
 
 .card h3 {
   margin: 10px 0 14px;
-  font-size: 28px;
+  font-size: 26px;
   line-height: 1.22;
   letter-spacing: -0.05em;
 }
@@ -742,7 +743,7 @@ button {
 .split__content span {
   display: inline-block;
   margin-bottom: 10px;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 800;
   letter-spacing: 0.16em;
   color: var(--primary-strong);
@@ -750,7 +751,7 @@ button {
 
 .split__content h2 {
   margin: 0;
-  font-size: clamp(32px, 4vw, 50px);
+  font-size: clamp(29px, 3.6vw, 45px);
   line-height: 1.18;
   letter-spacing: -0.05em;
 }
@@ -758,7 +759,7 @@ button {
 .split__content p {
   margin: 20px 0 0;
   color: var(--text-soft);
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .bullet-list {
@@ -816,7 +817,7 @@ button {
 .showcase__main h3 {
   max-width: 520px;
   margin: 12px 0;
-  font-size: clamp(30px, 4vw, 54px);
+  font-size: clamp(27px, 3.6vw, 49px);
   line-height: 1.14;
   letter-spacing: -0.05em;
 }
@@ -839,7 +840,7 @@ button {
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 600;
 }
 
@@ -857,7 +858,7 @@ button {
 
 .mini-card h4 {
   margin: 0 0 12px;
-  font-size: 28px;
+  font-size: 26px;
   line-height: 1.2;
   letter-spacing: -0.04em;
 }
@@ -906,7 +907,7 @@ button {
 
 .news-list__head h3 {
   margin: 0;
-  font-size: 24px;
+  font-size: 22px;
 }
 
 .news-list__items {
@@ -929,13 +930,13 @@ button {
 }
 
 .news-list__items strong {
-  font-size: 18px;
+  font-size: 16px;
   letter-spacing: -0.03em;
 }
 
 .news-list__items span {
   color: var(--text-soft);
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .news-list--dark .news-list__items li {
@@ -950,7 +951,7 @@ button {
 .news-list__items p {
   margin: 8px 0 0;
   color: var(--text-soft);
-  font-size: 15px;
+  font-size: 14px;
 }
 
 .contact-banner {
@@ -965,7 +966,7 @@ button {
 
 .contact-banner h2 {
   margin: 0;
-  font-size: clamp(28px, 4vw, 48px);
+  font-size: clamp(25px, 3.6vw, 43px);
   line-height: 1.16;
   letter-spacing: -0.05em;
 }
@@ -987,7 +988,7 @@ button {
   padding: 12px 16px;
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.1);
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .sub-hero {
@@ -1016,14 +1017,14 @@ button {
   display: inline-block;
   margin-bottom: 10px;
   letter-spacing: 0.16em;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 800;
   color: rgba(255, 255, 255, 0.82);
 }
 
 .sub-hero h1 {
   margin: 0;
-  font-size: clamp(36px, 5vw, 68px);
+  font-size: clamp(32px, 4.5vw, 61px);
   line-height: 1.1;
   letter-spacing: -0.05em;
 }
@@ -1032,7 +1033,7 @@ button {
   max-width: 760px;
   margin: 18px 0 0;
   color: rgba(255, 255, 255, 0.78);
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .page-nav {
@@ -1075,7 +1076,7 @@ button {
 
 .content-block h2 {
   margin: 0 0 18px;
-  font-size: clamp(28px, 3.5vw, 44px);
+  font-size: clamp(25px, 3.1vw, 40px);
   line-height: 1.2;
   letter-spacing: -0.05em;
 }
@@ -1083,7 +1084,7 @@ button {
 .content-block p {
   margin: 0;
   color: var(--text-soft);
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .metric-grid {
@@ -1102,14 +1103,14 @@ button {
 .metric strong {
   display: block;
   margin-bottom: 8px;
-  font-size: 38px;
+  font-size: 34px;
   line-height: 1;
   color: #0f2238;
 }
 
 .metric span {
   display: block;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 700;
 }
 
@@ -1142,12 +1143,12 @@ td {
 th {
   width: 180px;
   background: #fafafa;
-  font-size: 15px;
+  font-size: 14px;
 }
 
 td {
   color: var(--text-soft);
-  font-size: 16px;
+  font-size: 15px;
 }
 
 .timeline {
@@ -1166,13 +1167,13 @@ td {
 }
 
 .timeline__item strong {
-  font-size: 18px;
+  font-size: 16px;
   color: #0f2238;
 }
 
 .timeline__item h3 {
   margin: 0 0 8px;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1.22;
 }
 
@@ -1190,7 +1191,7 @@ td {
 .quote-box p {
   margin: 0;
   color: #2b2b2b;
-  font-size: 24px;
+  font-size: 22px;
   line-height: 1.5;
   font-weight: 700;
 }
@@ -1215,7 +1216,7 @@ td {
 
 .faq-item h3 {
   margin: 0 0 8px;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 1.3;
 }
 
@@ -1240,7 +1241,7 @@ td {
 .site-footer h2 {
   margin: 0 0 10px;
   color: #fff;
-  font-size: 26px;
+  font-size: 24px;
 }
 
 .site-footer p {
@@ -1250,7 +1251,7 @@ td {
 .site-footer small {
   display: block;
   margin-top: 12px;
-  font-size: 13px;
+  font-size: 12px;
   color: rgba(255, 255, 255, 0.5);
 }
 
@@ -1328,7 +1329,7 @@ td {
   }
 
   .brand__name strong {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .hero {
