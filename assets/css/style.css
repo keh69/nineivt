@@ -1087,6 +1087,32 @@ button {
   font-size: 16px;
 }
 
+/* 공지사항 페이지의 NOTICE 상자: 흰 바탕 위에서도 첫 화면처럼 보이게 */
+.content-block .notice-float__inner {
+  background: #121c2c;
+  border-color: #121c2c;
+  box-shadow: 0 14px 40px rgba(9, 18, 31, 0.18);
+  backdrop-filter: none;
+}
+
+.content-block .notice-float__head strong {
+  color: #fff;
+}
+
+.content-block .notice-float__body p {
+  margin: 0 0 10px;
+  color: rgba(255, 255, 255, 0.86);
+  font-size: 13px;
+}
+
+.content-block .notice-float__body p:last-child {
+  margin-bottom: 0;
+}
+
+.content-block .notice-float__body .notice-float__em {
+  color: #ffd59e;
+}
+
 .metric-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
