@@ -226,37 +226,98 @@ button {
   gap: 12px;
 }
 
+/* 버튼 · taste-skill (Leonxlnx/taste-skill) 기준
+   - data-buttons="arrow" 모양: 주 버튼만 색을 채우고 끝에 화살표, 보조 버튼은 밑줄 글자 링크 + 화살표
+   - 버튼 한 쌍만 사용(주/보조). 그라데이션·그림자·유령 버튼 없음
+   - 높이 44px, 글자 16px, 좌우 24px, 모서리 8px(soft)
+   - 마우스 올림: 색 한 단계 + 화살표 3px 이동 / 누름: 1px 내려가며 살짝 작아짐 */
 .pill {
+  --btn-ease: cubic-bezier(.2, .8, .2, 1);
+  --btn-dur: 180ms;
+  --btn-glyph: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpath d='M1.5 6h8.5M6.5 2.5 10 6l-3.5 3.5' fill='none' stroke='black' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
-  min-height: 48px;
-  padding: 0 18px;
-  border-radius: 999px;
-  font-weight: 700;
+  height: 44px;
+  padding: 0 24px;
+  border-radius: 8px;
   border: 1px solid transparent;
-  transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
-  will-change: transform;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background-color var(--btn-dur) var(--btn-ease), color var(--btn-dur) var(--btn-ease),
+    border-color var(--btn-dur) var(--btn-ease), text-decoration-color var(--btn-dur) var(--btn-ease);
 }
 
-.pill:hover {
-  transform: translateY(-1px);
-}
-
+/* 주 버튼: 화면마다 하나만 채운 색(나인 금색 + 짙은 글자) */
 .pill--primary {
-  background: linear-gradient(135deg, #102a45, #c9a35e);
-  color: #fff;
-  box-shadow: 0 14px 30px rgba(16, 42, 69, 0.2);
+  background: var(--primary);
+  color: var(--surface-dark);
 }
 
+.pill--primary:hover {
+  background: color-mix(in oklab, var(--primary) 86%, var(--text));
+}
+
+/* 보조 버튼: 버튼 높이의 밑줄 글자 링크 */
 .pill--ghost {
-  border-color: rgba(17, 17, 17, 0.12);
-  color: #1a1a1a;
-  background: #fff;
+  background: none;
+  color: var(--text);
+  padding-inline: 8px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-color: rgba(12, 17, 26, 0.28);
+}
+
+.pill--ghost:hover {
+  text-decoration-color: currentColor;
+}
+
+/* 사진 위·어두운 바닥글 위의 보조 버튼 */
+.hero .pill--ghost,
+.site-footer .pill--ghost {
+  color: #fff;
+  text-decoration-color: rgba(255, 255, 255, 0.45);
+}
+
+/* 화살표: 글꼴과 상관없이 같은 모양으로 그림 */
+.pill::after {
+  content: '';
+  flex: none;
+  width: 12px;
+  height: 12px;
+  margin-right: -2px;
+  background: currentColor;
+  -webkit-mask: var(--btn-glyph) center / contain no-repeat;
+  mask: var(--btn-glyph) center / contain no-repeat;
+  transition: transform var(--btn-dur) var(--btn-ease);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .pill:hover::after {
+    transform: translateX(3px);
+  }
 }
 
 .pill:active {
-  transform: translateY(0) scale(0.99);
+  transform: translateY(1px) scale(0.985);
+}
+
+/* 키보드 포커스: 바로 보이는 고리 */
+.pill:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  box-shadow: none;
+  border-radius: 8px;
+}
+
+.pill:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
 }
 
 .hero {
