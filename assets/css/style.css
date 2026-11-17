@@ -322,7 +322,7 @@ button {
 
 .hero {
   position: relative;
-  min-height: 100vh;
+  min-height: auto;
   color: #fff;
   background: var(--surface-dark);
   overflow: hidden;
@@ -372,9 +372,9 @@ button {
   display: grid;
   grid-template-columns: minmax(0, 1.15fr) minmax(320px, 420px);
   gap: 44px;
-  align-items: end;
-  min-height: 100vh;
-  padding: 100px 0 72px;
+  align-items: start;
+  min-height: auto;
+  padding: 28px 0 72px;
 }
 
 .hero__eyebrow {
@@ -477,10 +477,7 @@ button {
 }
 
 .notice-float {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
+  position: relative;
   z-index: 2;
   padding-top: 96px; /* fixed header 높이 고려 */
   pointer-events: none;
@@ -1277,7 +1274,7 @@ td {
 
   .hero__grid {
     min-height: auto;
-    padding: 88px 0 48px;
+    padding: 20px 0 48px;
   }
 
   .hero__panel,
