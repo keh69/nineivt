@@ -78,7 +78,7 @@ module.exports = async (req, res) => {
     };
 
     // 1) 현재 파일 SHA 조회
-    const getUrl = `https://api.github.com/repos/${OWNER}/${REPO}/contents/${encodeURIComponent(FILE_PATH)}?ref=${encodeURIComponent(BRANCH)}`;
+    const getUrl = `https://api.github.com/repos/${OWNER}/${REPO}/contents/${FILE_PATH.split('/').map(encodeURIComponent).join('/')}?ref=${encodeURIComponent(BRANCH)}`;
     const getRes = await fetch(getUrl, { headers: ghHeaders });
     if (!getRes.ok) {
       const t = await getRes.text();
@@ -88,7 +88,7 @@ module.exports = async (req, res) => {
     const current = await getRes.json();
 
     // 2) 파일 업데이트(커밋)
-    const putUrl = `https://api.github.com/repos/${OWNER}/${REPO}/contents/${encodeURIComponent(FILE_PATH)}`;
+    const putUrl = `https://api.github.com/repos/${OWNER}/${REPO}/contents/${FILE_PATH.split('/').map(encodeURIComponent).join('/')}`;
     const content = Buffer.from(JSON.stringify(payload, null, 2), 'utf8').toString('base64');
 
     const putBody = {

@@ -92,6 +92,32 @@
     });
   }
 
+  // 하위 페이지 탭(대표 인사말 · 회사 개요 …): 누른 탭과 지금 보이는 구역을 표시
+  const pageNavLinks = [...document.querySelectorAll('.page-nav a[href^="#"]')];
+  if (pageNavLinks.length) {
+    const setActive = (hash) => {
+      pageNavLinks.forEach((a) => a.classList.toggle('is-active', a.getAttribute('href') === hash));
+    };
+    pageNavLinks.forEach((a) => a.addEventListener('click', () => setActive(a.getAttribute('href'))));
+    if (location.hash && pageNavLinks.some((a) => a.getAttribute('href') === location.hash)) {
+      setActive(location.hash);
+    }
+    if ('IntersectionObserver' in window) {
+      const io = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) setActive(`#${entry.target.id}`);
+          });
+        },
+        { rootMargin: '-40% 0px -55% 0px' }
+      );
+      pageNavLinks.forEach((a) => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) io.observe(target);
+      });
+    }
+  }
+
   const yearNode = document.querySelector('[data-current-year]');
   if (yearNode) {
     yearNode.textContent = new Date().getFullYear();
