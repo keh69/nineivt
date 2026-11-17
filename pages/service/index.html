@@ -4,21 +4,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>서비스안내 | 나인투자</title>
-  <meta name="description" content="나인투자의 서비스 구성과 상담 흐름을 확인할 수 있습니다.">
+  <meta name="description" content="나인투자 서비스의 이용 절차, 문의 방법, 자주 묻는 질문을 안내합니다.">
+  <meta name="theme-color" content="#0b2a66">
+  <link rel="icon" href="../../n-logo-core.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2.0.5/fonts/variable/woff2/SUIT-Variable.css">
   <link rel="stylesheet" href="../../assets/css/style.css">
 </head>
 <body>
+  <a class="skip-link" href="#main">본문 바로가기</a>
+
   <header class="site-header">
     <div class="container site-header__inner">
-      <a class="brand" href="../../index.html" aria-label="나인투자 홈">
-        <span class="brand__mark"><img src="../../n-logo-core.svg" alt="나인투자 로고"></span>
-        <span class="brand__name">
-          <small>PREMIUM INVESTMENT GROUP</small>
-          <strong>나인투자</strong>
-        </span>
+      <a class="brand" href="../../index.html">
+        <img src="../../n-logo-core.svg" alt="" width="40" height="40">
+        <strong>나인투자</strong>
       </a>
-
-      <nav class="site-nav" aria-label="주요 메뉴">
+      <nav class="site-nav" id="site-nav" aria-label="주요 메뉴">
         <a href="../../index.html">홈</a>
         <a href="../about/index.html">회사소개</a>
         <a href="../business/index.html">사업영역</a>
@@ -26,153 +27,153 @@
         <a href="../location/index.html">오시는 길</a>
         <a href="../news/index.html">공지사항</a>
       </nav>
-
-      <div class="header-cta">
-        <a class="pill pill--ghost" href="../location/index.html">방문 안내</a>
-      </div>
-
-      <button class="nav-toggle" type="button" aria-label="모바일 메뉴 열기">
-        <span></span>
-      </button>
+      <p class="header-tel">대표번호<strong>0000-0000</strong></p>
+      <button class="nav-toggle" type="button" aria-label="메뉴 열기" aria-controls="site-nav"><span></span></button>
     </div>
   </header>
 
-  <main>
-    <section class="sub-hero" style="background-image:url('../../assets/images/hero_finance.jpg')">
-      <div class="container sub-hero__inner">
-        <span>SERVICE</span>
-        <h1>깊이 있는 분석과 전략으로<br>고객의 목표를 실현합니다.</h1>
-        <p>상담 전 이해도 확보, 핵심 요약 전달, 후속 연결까지 고려한 서비스형 페이지 구성입니다.</p>
-      </div>
-    </section>
-
-    <div class="page-nav">
-      <div class="container page-nav__inner">
-        <a class="is-active" href="#guide">서비스 개요</a>
-        <a href="#process">상담 절차</a>
-        <a href="#contact">문의 방식</a>
-        <a href="#faq">자주 묻는 질문</a>
+  <main id="main">
+    <div class="page-head">
+      <div class="container">
+        <ol class="crumbs">
+          <li><a href="../../index.html">홈</a></li>
+          <li>서비스안내</li>
+        </ol>
+        <h1>서비스안내</h1>
+        <p>나인투자의 정보를 받아 보는 방법과 문의 방법을 안내합니다.</p>
+        <ul class="page-toc">
+          <li><a href="#overview">서비스 개요</a></li>
+          <li><a href="#process">이용 절차</a></li>
+          <li><a href="#contact">문의 방법</a></li>
+          <li><a href="#faq">자주 묻는 질문</a></li>
+        </ul>
       </div>
     </div>
 
-    <section class="container">
-      <div class="content-block" id="guide">
-        <div class="split">
-          <div class="split__content">
-            <span>GUIDE</span>
-            <h2>나인투자의 서비스는<br>이해하기 쉬운 전략 전달에 초점을 둡니다.</h2>
-            <p>
-              고객이 복잡한 시장 정보를 한 번에 받아들이기 어려운 점을 고려해,
-              나인투자는 핵심 요점 중심의 브리핑과 문의 흐름을 기반으로 페이지를 구성했습니다.
-            </p>
-            <ul class="bullet-list">
-              <li>투자전략 자문과 시장 요약 전달</li>
-              <li>상황별 브리핑 포인트 정리</li>
-              <li>상담 후 후속 소통 구조 유지</li>
+    <div class="container">
+      <section class="block" id="overview">
+        <div class="block__grid">
+          <div class="block__side">
+            <h2>서비스 개요</h2>
+          </div>
+          <div class="prose">
+            <p class="lead">나인투자는 시장 정보와 리서치 브리핑을 공지사항으로 전합니다. 같은 내용을 같은 시점에 모든 이용자에게 제공합니다.</p>
+            <ul class="check-list">
+              <li>시장 흐름과 업종 변화를 정리한 리서치 브리핑</li>
+              <li>일정, 휴무, 서비스 변경 같은 운영 안내</li>
+              <li>모든 정보는 홈페이지 공지사항에서 확인</li>
             </ul>
-          </div>
-          <div class="image-frame">
-            <img src="../../assets/images/service_strategy.jpg" alt="서비스 전략 이미지">
+            <p class="notice-band">
+              <strong>개별 투자 상담과 자금 운용은 하지 않습니다.</strong>
+              유사투자자문업자는 특정인에게 맞춘 조언을 할 수 없습니다.
+            </p>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div class="content-block" id="process">
-        <h2>상담 절차</h2>
-        <p>소개형 사이트에서 자주 사용하는 단계형 절차 안내 구성을 그대로 활용할 수 있도록 만들었습니다.</p>
-        <div class="timeline">
-          <article class="timeline__item">
-            <strong>01</strong>
-            <div>
-              <h3>초기 문의 접수</h3>
-              <p>전화, 폼, 메신저 등 원하는 채널로 문의를 접수하고 기본 목적을 확인합니다.</p>
-            </div>
-          </article>
-          <article class="timeline__item">
-            <strong>02</strong>
-            <div>
-              <h3>기초 정보 정리</h3>
-              <p>상담 목적, 관심 분야, 일정, 기대하는 정보 수준을 짧게 정리합니다.</p>
-            </div>
-          </article>
-          <article class="timeline__item">
-            <strong>03</strong>
-            <div>
-              <h3>전략 브리핑 전달</h3>
-              <p>핵심 이슈와 방향성을 중심으로 이해하기 쉬운 형태의 안내를 제공합니다.</p>
-            </div>
-          </article>
-          <article class="timeline__item">
-            <strong>04</strong>
-            <div>
-              <h3>후속 문의 연결</h3>
-              <p>공지, 후기, 추가 안내 페이지와 연결해 사이트 안에서 다음 행동이 자연스럽게 이어지도록 합니다.</p>
-            </div>
-          </article>
+      <section class="block" id="process">
+        <div class="block__grid">
+          <div class="block__side">
+            <h2>이용 절차</h2>
+            <p>처음 이용하시는 분은 이 순서대로 진행됩니다.</p>
+          </div>
+          <ol class="steps" style="--cols: 2">
+            <li>
+              <h3>이용 문의</h3>
+              <p>대표번호나 이메일로 서비스 이용을 문의합니다.</p>
+            </li>
+            <li>
+              <h3>이용 조건 안내</h3>
+              <p>제공 범위, 이용 기간, 요금, 유의 사항을 설명드립니다.</p>
+            </li>
+            <li>
+              <h3>정보 제공 시작</h3>
+              <p>공지와 리서치 브리핑을 받아 보실 수 있습니다.</p>
+            </li>
+            <li>
+              <h3>공지로 변경 사항 확인</h3>
+              <p>일정이나 서비스가 바뀌면 공지사항에 먼저 올립니다.</p>
+            </li>
+          </ol>
         </div>
-      </div>
+      </section>
 
-      <div class="content-block" id="contact">
-        <h2>문의 방식</h2>
-        <p>실제 운영 전에는 아래 번호와 메일만 원하는 값으로 교체하면 됩니다.</p>
-        <div class="table-wrap">
-          <table>
+      <section class="block" id="contact">
+        <div class="block__grid">
+          <div class="block__side">
+            <h2>문의 방법</h2>
+            <p>서비스 이용 방법에 관한 문의만 받습니다.</p>
+          </div>
+          <table class="info-table">
             <tbody>
-              <tr>
-                <th>대표번호</th>
-                <td>0000-0000</td>
-              </tr>
-              <tr>
-                <th>상담시간</th>
-                <td>평일 09:00 ~ 18:00</td>
-              </tr>
-              <tr>
-                <th>이메일</th>
-                <td>info@nine-invest.co.kr</td>
-              </tr>
-              <tr>
-                <th>방문상담</th>
-                <td>사전 예약 후 가능</td>
-              </tr>
-              <tr>
-                <th>기본 안내</th>
-                <td>홈페이지, 공지사항, 후기 페이지를 통해 추가 참고 정보를 함께 제공합니다.</td>
-              </tr>
+              <tr><th scope="row">대표번호</th><td>0000-0000</td></tr>
+              <tr><th scope="row">이메일</th><td>info@nine-invest.co.kr</td></tr>
+              <tr><th scope="row">운영시간</th><td>평일 09:00 ~ 18:00 (점심시간 12:00 ~ 13:00)</td></tr>
+              <tr><th scope="row">방문</th><td>전화로 예약한 뒤 방문해 주세요.</td></tr>
             </tbody>
           </table>
         </div>
-      </div>
+      </section>
 
-      <div class="content-block" id="faq">
-        <h2>자주 묻는 질문</h2>
-        <p>서비스 소개 페이지에 자주 붙는 Q&A 블록까지 미리 구성했습니다.</p>
-        <div class="faq-list">
-          <article class="faq-item">
-            <h3>처음 방문한 고객도 바로 이해할 수 있나요?</h3>
-            <p>네. 복잡한 표보다 큰 제목과 짧은 설명 중심으로 구성해 이해 부담을 줄였습니다.</p>
-          </article>
-          <article class="faq-item">
-            <h3>페이지 수정은 어디서 하면 되나요?</h3>
-            <p>각 페이지가 폴더별로 나뉘어 있으므로 `pages/service/index.html` 같은 파일만 수정하면 됩니다.</p>
-          </article>
-          <article class="faq-item">
-            <h3>추가 메뉴도 쉽게 붙일 수 있나요?</h3>
-            <p>가능합니다. 공통 헤더와 푸터는 동일 구조이므로 같은 형식으로 새 폴더를 추가하면 확장할 수 있습니다.</p>
-          </article>
+      <section class="block" id="faq">
+        <div class="block__grid">
+          <div class="block__side">
+            <h2>자주 묻는 질문</h2>
+          </div>
+          <div class="faq">
+            <details>
+              <summary>제가 가진 종목에 대해 따로 물어볼 수 있나요?</summary>
+              <p>아니요. 유사투자자문업자는 특정 개인에게 맞춘 투자 상담을 할 수 없습니다. 특정 주식이나 금융투자상품의 판단과 가치에 대한 문의에는 답할 수 없습니다.</p>
+            </details>
+            <details>
+              <summary>홈페이지에 글이나 댓글을 남길 수 있나요?</summary>
+              <p>아니요. 2024년 8월 14일부터 시행된 자본시장법에 따라 양방향 소통을 이용한 영업이 허용되지 않아, 회원은 홈페이지에 글을 쓸 수 없습니다.</p>
+            </details>
+            <details>
+              <summary>새 소식은 어디서 확인하나요?</summary>
+              <p>모든 소식은 <a class="text-link" href="../news/index.html">공지사항</a>에 올립니다. 중요한 안내는 목록 맨 위에 고정해 둡니다.</p>
+            </details>
+            <details>
+              <summary>투자금을 맡기거나 계좌 관리를 부탁할 수 있나요?</summary>
+              <p>아니요. 나인투자는 고객의 자금을 받아 운용하거나 계좌를 대신 관리하지 않습니다. 이런 제안을 받으셨다면 나인투자와 관계없는 곳이니 주의해 주세요.</p>
+            </details>
+            <details>
+              <summary>문의 전화는 언제 받나요?</summary>
+              <p>평일 09:00부터 18:00까지 받습니다. 점심시간(12:00 ~ 13:00)과 주말, 공휴일에는 연결이 어렵습니다.</p>
+            </details>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   </main>
 
   <footer class="site-footer">
-    <div class="container site-footer__inner">
-      <div>
-        <h2>나인투자</h2>
-        <p>주소: 서울시 영등포구 금융로 000, 11F / 상호: 나인투자 / 사업자등록번호: 000-00-00000</p>
-        <p>Tel: 0000-0000 / Fax: 00-000-0000 / E-mail: info@nine-invest.co.kr</p>
-        <small>Copyright ⓒ <span data-current-year></span> Nine Investment. All Rights Reserved.</small>
+    <div class="container">
+      <div class="site-footer__top">
+        <div>
+          <h2>나인투자</h2>
+          <dl>
+            <div><dt>주소</dt><dd>서울시 영등포구 금융로 000, 11F</dd></div>
+            <div><dt>사업자등록번호</dt><dd>000-00-00000</dd></div>
+          </dl>
+        </div>
+        <dl>
+          <div><dt>대표번호</dt><dd>0000-0000</dd></div>
+          <div><dt>팩스</dt><dd>00-000-0000</dd></div>
+          <div><dt>이메일</dt><dd>info@nine-invest.co.kr</dd></div>
+          <div><dt>운영시간</dt><dd>평일 09:00 ~ 18:00</dd></div>
+        </dl>
+        <ul class="footer-links">
+          <li><a href="../news/index.html">공지사항</a></li>
+          <li><a href="../reviews/index.html">고객후기</a></li>
+          <li><a href="../location/index.html">오시는 길</a></li>
+        </ul>
       </div>
-      <a class="pill pill--ghost" href="../location/index.html">오시는 길 바로가기</a>
+      <div class="site-footer__legal">
+        <p>나인투자는 금융투자업자가 아닌 유사투자자문업자로, 개별적인 투자 상담과 자금 운용을 할 수 없습니다.</p>
+        <p>투자 결과에 따라 원금 손실이 생길 수 있으며, 그 손실은 투자자에게 귀속됩니다. 이 사이트의 정보는 투자 판단의 참고 자료이며 수익을 보장하지 않습니다.</p>
+      </div>
+      <small>Copyright ⓒ <span data-current-year></span> Nine Investment. All Rights Reserved.</small>
     </div>
   </footer>
 

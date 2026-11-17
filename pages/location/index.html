@@ -4,21 +4,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>오시는 길 | 나인투자</title>
-  <meta name="description" content="나인투자의 위치와 방문 안내 정보를 확인할 수 있습니다.">
+  <meta name="description" content="나인투자의 주소, 연락처, 방문 순서를 안내합니다.">
+  <meta name="theme-color" content="#0b2a66">
+  <link rel="icon" href="../../n-logo-core.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2.0.5/fonts/variable/woff2/SUIT-Variable.css">
   <link rel="stylesheet" href="../../assets/css/style.css">
 </head>
 <body>
+  <a class="skip-link" href="#main">본문 바로가기</a>
+
   <header class="site-header">
     <div class="container site-header__inner">
-      <a class="brand" href="../../index.html" aria-label="나인투자 홈">
-        <span class="brand__mark"><img src="../../n-logo-core.svg" alt="나인투자 로고"></span>
-        <span class="brand__name">
-          <small>PREMIUM INVESTMENT GROUP</small>
-          <strong>나인투자</strong>
-        </span>
+      <a class="brand" href="../../index.html">
+        <img src="../../n-logo-core.svg" alt="" width="40" height="40">
+        <strong>나인투자</strong>
       </a>
-
-      <nav class="site-nav" aria-label="주요 메뉴">
+      <nav class="site-nav" id="site-nav" aria-label="주요 메뉴">
         <a href="../../index.html">홈</a>
         <a href="../about/index.html">회사소개</a>
         <a href="../business/index.html">사업영역</a>
@@ -26,130 +27,108 @@
         <a href="../location/index.html">오시는 길</a>
         <a href="../news/index.html">공지사항</a>
       </nav>
-
-      <div class="header-cta">
-        <a class="pill pill--ghost" href="../location/index.html">방문 안내</a>
-      </div>
-
-      <button class="nav-toggle" type="button" aria-label="모바일 메뉴 열기">
-        <span></span>
-      </button>
+      <p class="header-tel">대표번호<strong>0000-0000</strong></p>
+      <button class="nav-toggle" type="button" aria-label="메뉴 열기" aria-controls="site-nav"><span></span></button>
     </div>
   </header>
 
-  <main>
-    <section class="sub-hero" style="background-image:url('../../assets/images/hero_finance.jpg')">
-      <div class="container sub-hero__inner">
-        <span>LOCATION</span>
-        <h1>방문 전 필요한 정보를<br>한 번에 확인할 수 있습니다.</h1>
-        <p>주소, 대표번호, 방문 상담 절차, 대중교통 정보를 편집하기 쉬운 구조로 정리했습니다.</p>
-      </div>
-    </section>
-
-    <div class="page-nav">
-      <div class="container page-nav__inner">
-        <a class="is-active" href="#address">기본 정보</a>
-        <a href="#visit">방문 안내</a>
-        <a href="#transport">교통 안내</a>
+  <main id="main">
+    <div class="page-head">
+      <div class="container">
+        <ol class="crumbs">
+          <li><a href="../../index.html">홈</a></li>
+          <li>오시는 길</li>
+        </ol>
+        <h1>오시는 길</h1>
+        <p>방문은 예약제로 운영합니다. 오시기 전에 대표번호로 먼저 연락해 주세요.</p>
       </div>
     </div>
 
-    <section class="container">
-      <div class="content-block" id="address">
-        <h2>기본 정보</h2>
-        <p>대표번호나 주소처럼 자주 바뀌는 항목은 표로 분리해 관리가 쉽도록 구성했습니다.</p>
-        <div class="table-wrap">
-          <table>
+    <div class="container">
+      <section class="block" id="info">
+        <div class="block__grid">
+          <div class="block__side">
+            <h2>기본 정보</h2>
+          </div>
+          <table class="info-table">
             <tbody>
-              <tr>
-                <th>상호</th>
-                <td>나인투자</td>
-              </tr>
-              <tr>
-                <th>주소</th>
-                <td>서울시 영등포구 금융로 000, 11F</td>
-              </tr>
-              <tr>
-                <th>대표번호</th>
-                <td>0000-0000</td>
-              </tr>
-              <tr>
-                <th>팩스</th>
-                <td>00-000-0000</td>
-              </tr>
-              <tr>
-                <th>이메일</th>
-                <td>info@nine-invest.co.kr</td>
-              </tr>
-              <tr>
-                <th>상담시간</th>
-                <td>평일 09:00 ~ 18:00 / 점심시간 12:00 ~ 13:00</td>
-              </tr>
+              <tr><th scope="row">상호</th><td>나인투자</td></tr>
+              <tr><th scope="row">주소</th><td>서울시 영등포구 금융로 000, 11F</td></tr>
+              <tr><th scope="row">대표번호</th><td>0000-0000</td></tr>
+              <tr><th scope="row">팩스</th><td>00-000-0000</td></tr>
+              <tr><th scope="row">이메일</th><td>info@nine-invest.co.kr</td></tr>
+              <tr><th scope="row">운영시간</th><td>평일 09:00 ~ 18:00 (점심시간 12:00 ~ 13:00)</td></tr>
             </tbody>
           </table>
         </div>
-      </div>
+      </section>
 
-      <div class="content-block" id="visit">
-        <div class="split">
-          <div class="split__content">
-            <span>VISIT</span>
-            <h2>방문 상담 안내</h2>
-            <p>
-              소개형 투자회사 사이트에서 자주 사용하는 ‘방문 전 확인 사항’ 구조를 반영했습니다.
-              실제 운영 시에는 주차 가능 여부, 안내 데스크 정보, 예약 절차만 수정하면 됩니다.
-            </p>
-            <ul class="bullet-list">
-              <li>방문 전 전화 또는 온라인 문의로 사전 예약</li>
-              <li>도착 후 접수 확인 및 상담 안내</li>
-              <li>상담 종료 후 자료 전달 및 후속 안내</li>
-            </ul>
+      <section class="block" id="visit">
+        <div class="block__grid">
+          <div class="block__side">
+            <h2>방문 순서</h2>
+            <p>예약 없이 오시면 담당자를 만나기 어려울 수 있습니다.</p>
           </div>
-          <div class="image-frame">
-            <img src="../../assets/images/about_team.jpg" alt="방문 상담 이미지">
-          </div>
+          <ol class="steps" style="--cols: 3">
+            <li>
+              <h3>전화 예약</h3>
+              <p>대표번호로 방문 날짜와 시간을 정합니다.</p>
+            </li>
+            <li>
+              <h3>11층 안내 데스크</h3>
+              <p>도착하시면 예약자 성함을 말씀해 주세요.</p>
+            </li>
+            <li>
+              <h3>이용 안내</h3>
+              <p>서비스 범위와 이용 조건을 설명드립니다.</p>
+            </li>
+          </ol>
         </div>
-      </div>
+      </section>
 
-      <div class="content-block" id="transport">
-        <h2>교통 안내</h2>
-        <p>실제 지도 삽입 전에도 충분히 읽히는 정보형 블록이 되도록 구성했습니다.</p>
-        <div class="timeline">
-          <article class="timeline__item">
-            <strong>지하철</strong>
-            <div>
-              <h3>가까운 역에서 도보 이동</h3>
-              <p>주요 업무지구 인근 역 기준 도보 3분 내외로 표기하는 형태에 맞췄습니다.</p>
-            </div>
-          </article>
-          <article class="timeline__item">
-            <strong>버스</strong>
-            <div>
-              <h3>주요 정류장 하차 후 이동</h3>
-              <p>간선, 지선, 광역 노선 등 필요한 정보만 추가해 간단히 확장할 수 있습니다.</p>
-            </div>
-          </article>
-          <article class="timeline__item">
-            <strong>주차</strong>
-            <div>
-              <h3>사전 확인 후 지원</h3>
-              <p>건물 내 주차 가능 시간과 무료 지원 조건을 실제 운영 정책에 맞게 교체하면 됩니다.</p>
-            </div>
-          </article>
+      <section class="block" id="traffic">
+        <div class="block__grid">
+          <div class="block__side">
+            <h2>교통과 주차</h2>
+          </div>
+          <table class="info-table">
+            <tbody>
+              <tr><th scope="row">대중교통</th><td>가까운 지하철역과 버스 정류장은 방문 예약 때 함께 안내해 드립니다.</td></tr>
+              <tr><th scope="row">주차</th><td>건물 주차장 이용 가능 여부와 시간은 예약할 때 확인해 주세요.</td></tr>
+            </tbody>
+          </table>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   </main>
 
   <footer class="site-footer">
-    <div class="container site-footer__inner">
-      <div>
-        <h2>나인투자</h2>
-        <p>주소: 서울시 영등포구 금융로 000, 11F / 상호: 나인투자 / 사업자등록번호: 000-00-00000</p>
-        <p>Tel: 0000-0000 / Fax: 00-000-0000 / E-mail: info@nine-invest.co.kr</p>
-        <small>Copyright ⓒ <span data-current-year></span> Nine Investment. All Rights Reserved.</small>
+    <div class="container">
+      <div class="site-footer__top">
+        <div>
+          <h2>나인투자</h2>
+          <dl>
+            <div><dt>주소</dt><dd>서울시 영등포구 금융로 000, 11F</dd></div>
+            <div><dt>사업자등록번호</dt><dd>000-00-00000</dd></div>
+          </dl>
+        </div>
+        <dl>
+          <div><dt>대표번호</dt><dd>0000-0000</dd></div>
+          <div><dt>팩스</dt><dd>00-000-0000</dd></div>
+          <div><dt>이메일</dt><dd>info@nine-invest.co.kr</dd></div>
+          <div><dt>운영시간</dt><dd>평일 09:00 ~ 18:00</dd></div>
+        </dl>
+        <ul class="footer-links">
+          <li><a href="../news/index.html">공지사항</a></li>
+          <li><a href="../reviews/index.html">고객후기</a></li>
+          <li><a href="../location/index.html">오시는 길</a></li>
+        </ul>
       </div>
-      <a class="pill pill--ghost" href="../service/index.html">상담 문의 바로가기</a>
+      <div class="site-footer__legal">
+        <p>나인투자는 금융투자업자가 아닌 유사투자자문업자로, 개별적인 투자 상담과 자금 운용을 할 수 없습니다.</p>
+        <p>투자 결과에 따라 원금 손실이 생길 수 있으며, 그 손실은 투자자에게 귀속됩니다. 이 사이트의 정보는 투자 판단의 참고 자료이며 수익을 보장하지 않습니다.</p>
+      </div>
+      <small>Copyright ⓒ <span data-current-year></span> Nine Investment. All Rights Reserved.</small>
     </div>
   </footer>
 

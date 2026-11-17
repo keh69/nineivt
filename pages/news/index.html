@@ -4,21 +4,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>공지사항 | 나인투자</title>
-  <meta name="description" content="나인투자의 공지사항 페이지입니다. 회원은 게시글 작성이 불가하며, 관리자만 작성할 수 있습니다.">
+  <meta name="description" content="나인투자 공지사항입니다. 회원은 글을 쓸 수 없고 열람만 할 수 있습니다.">
+  <meta name="theme-color" content="#0b2a66">
+  <link rel="icon" href="../../n-logo-core.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2.0.5/fonts/variable/woff2/SUIT-Variable.css">
   <link rel="stylesheet" href="../../assets/css/style.css">
 </head>
 <body>
+  <a class="skip-link" href="#main">본문 바로가기</a>
+
   <header class="site-header">
     <div class="container site-header__inner">
-      <a class="brand" href="../../index.html" aria-label="나인투자 홈">
-        <span class="brand__mark"><img src="../../n-logo-core.svg" alt="나인투자 로고"></span>
-        <span class="brand__name">
-          <small>PREMIUM INVESTMENT GROUP</small>
-          <strong>나인투자</strong>
-        </span>
+      <a class="brand" href="../../index.html">
+        <img src="../../n-logo-core.svg" alt="" width="40" height="40">
+        <strong>나인투자</strong>
       </a>
-
-      <nav class="site-nav" aria-label="주요 메뉴">
+      <nav class="site-nav" id="site-nav" aria-label="주요 메뉴">
         <a href="../../index.html">홈</a>
         <a href="../about/index.html">회사소개</a>
         <a href="../business/index.html">사업영역</a>
@@ -26,73 +27,77 @@
         <a href="../location/index.html">오시는 길</a>
         <a href="../news/index.html">공지사항</a>
       </nav>
-
-      <div class="header-cta">
-        <a class="pill pill--ghost" href="../location/index.html">방문 안내</a>
-      </div>
-
-      <button class="nav-toggle" type="button" aria-label="모바일 메뉴 열기">
-        <span></span>
-      </button>
+      <p class="header-tel">대표번호<strong>0000-0000</strong></p>
+      <button class="nav-toggle" type="button" aria-label="메뉴 열기" aria-controls="site-nav"><span></span></button>
     </div>
   </header>
 
-  <main>
-    <section class="sub-hero" style="background-image:url('../../assets/images/hero_finance.jpg')">
-      <div class="container sub-hero__inner">
-        <span>NOTICE</span>
-        <h1>공지사항(단방향 안내)</h1>
-        <p>회원은 글을 쓸 수 없으며, 관리자만 공지사항을 등록할 수 있습니다.</p>
+  <main id="main">
+    <div class="page-head">
+      <div class="container">
+        <ol class="crumbs">
+          <li><a href="../../index.html">홈</a></li>
+          <li>공지사항</li>
+        </ol>
+        <h1>공지사항</h1>
+        <p>나인투자의 모든 소식은 이 게시판에만 올립니다. 회원은 글을 쓸 수 없고, 열람만 할 수 있습니다.</p>
       </div>
-    </section>
+    </div>
 
-    <section class="container">
-      <div class="content-block">
-        <h2>NOTICE</h2>
-        <p>아래 문구는 메인 화면과 공지사항 페이지에 동일하게 노출됩니다.</p>
+    <div class="container page-body">
+      <section class="board board--framed" aria-labelledby="board-title">
+        <div class="board__head">
+          <h2 id="board-title">전체 공지</h2>
+          <span class="board__date" data-pinned-date></span>
+        </div>
 
-        <div class="notice-float__inner" data-notice-root style="margin-top: 18px;">
-          <div class="notice-float__head">
-            <span class="notice-badge">!</span>
-            <strong data-pinned-title>NOTICE</strong>
-          </div>
-          <div class="notice-float__body" data-pinned-body>
+        <div class="pinned">
+          <p class="pinned__label">꼭 읽어 주세요</p>
+          <div class="pinned__body" data-pinned-body data-base="../../">
             <p>공지 내용을 불러오는 중입니다.</p>
           </div>
         </div>
 
-        <div class="content-block" style="padding-top: 50px;">
-          <h2>공지 목록</h2>
-          <p>이 목록은 관리자만 업데이트할 수 있습니다.</p>
-          <div class="news-list space-top">
-            <div class="news-list__head">
-              <h3>공지사항</h3>
-              <a href="../../admin/index.html">관리자 작성</a>
-            </div>
-            <ul class="news-list__items" data-notice-list>
-              <li>
-                <div>
-                  <strong>공지사항</strong>
-                  <p>목록을 불러오는 중입니다.</p>
-                </div>
-                <span>-</span>
-              </li>
-            </ul>
-          </div>
+        <div class="board__cols" aria-hidden="true">
+          <span>번호</span>
+          <span>제목</span>
+          <span>등록일</span>
         </div>
-      </div>
-    </section>
+        <ul class="board__list" data-notice-list data-mode="full" data-base="../../">
+          <li class="board__empty">목록을 불러오는 중입니다.</li>
+        </ul>
+      </section>
+      <p class="page-note">제목을 누르면 내용이 펼쳐집니다.</p>
+    </div>
   </main>
 
   <footer class="site-footer">
-    <div class="container site-footer__inner">
-      <div>
-        <h2>나인투자</h2>
-        <p>주소: 서울시 영등포구 금융로 000, 11F / 상호: 나인투자 / 사업자등록번호: 000-00-00000</p>
-        <p>Tel: 0000-0000 / Fax: 00-000-0000 / E-mail: info@nine-invest.co.kr</p>
-        <small>Copyright ⓒ <span data-current-year></span> Nine Investment. All Rights Reserved.</small>
+    <div class="container">
+      <div class="site-footer__top">
+        <div>
+          <h2>나인투자</h2>
+          <dl>
+            <div><dt>주소</dt><dd>서울시 영등포구 금융로 000, 11F</dd></div>
+            <div><dt>사업자등록번호</dt><dd>000-00-00000</dd></div>
+          </dl>
+        </div>
+        <dl>
+          <div><dt>대표번호</dt><dd>0000-0000</dd></div>
+          <div><dt>팩스</dt><dd>00-000-0000</dd></div>
+          <div><dt>이메일</dt><dd>info@nine-invest.co.kr</dd></div>
+          <div><dt>운영시간</dt><dd>평일 09:00 ~ 18:00</dd></div>
+        </dl>
+        <ul class="footer-links">
+          <li><a href="../news/index.html">공지사항</a></li>
+          <li><a href="../reviews/index.html">고객후기</a></li>
+          <li><a href="../location/index.html">오시는 길</a></li>
+        </ul>
       </div>
-      <a class="pill pill--ghost" href="../../index.html">홈으로</a>
+      <div class="site-footer__legal">
+        <p>나인투자는 금융투자업자가 아닌 유사투자자문업자로, 개별적인 투자 상담과 자금 운용을 할 수 없습니다.</p>
+        <p>투자 결과에 따라 원금 손실이 생길 수 있으며, 그 손실은 투자자에게 귀속됩니다. 이 사이트의 정보는 투자 판단의 참고 자료이며 수익을 보장하지 않습니다.</p>
+      </div>
+      <small>Copyright ⓒ <span data-current-year></span> Nine Investment. All Rights Reserved.</small>
     </div>
   </footer>
 
